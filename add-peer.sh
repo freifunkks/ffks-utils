@@ -68,7 +68,7 @@ enter_name
 enter_key
 
 echo "Generating key file..."
-file="# ${name}\n# $(date --iso-8601)\nkey=\"${key}\";"
+file="# ${name}\n# $(date --iso-8601)\nkey \"${key}\";"
 echo -e "${file}" | sed 's/^/  /'
 echo -e "${file}" > ${name}
 
